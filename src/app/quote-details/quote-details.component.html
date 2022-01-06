@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <app-header></app-header>
+    <div class="row">
+        <div class="col-md-4">
+    <app-form (formemit)= "emmitedDetails($event)"></app-form>
+        </div>
+        <div class="col-md-8">
+    <app-quotes></app-quotes>
+    <div *ngFor = "let quote of myQuote">
+        <h1>Name:{{quote.name}}</h1>
+        <h1>Quote:{{quote.quote}}</h1>
+        <h1>Author:{{quote.author}}</h1>
+        <h1>Date:{{quote.date}}</h1>
+    </div>
+        </div>
+      </div>
+    
+</div>
