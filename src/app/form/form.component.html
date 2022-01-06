@@ -1,21 +1,22 @@
-<div class="container-fluid">
-    <div class="row">
-        <form>
-            <div class="form-group">
-                <label for="author"> Author</label>
-                    <textarea name="author" id="author"></textarea>
-            </div><br>
-            <div class="form-group">
-                <label for="User">User</label>
-                    <textarea name="quoteAuthor" id="quoteAuthor"></textarea>
-            </div><br>
-            <div class="form-group">
-                <label for="quote">Quote</label>
-                    <textarea name="quote" id="quote" rows="5"></textarea>
-            </div><br>
-            <br><br>
-            <button type="submit" class="btn btn-info btn-lg">Add Quote</button>
-
-        </form>
-    </div>
+<div class="container">
+    <form (ngSubmit) = receive(details) #details ="ngForm">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="name"name = "name"class="form-control" id="exampleFormControlInput1" [(ngModel)] = "myQuote.name"placeholder="Your name">
+            {{myQuote.name}}
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Quote</label>
+            <textarea name = "quote"class="form-control" id="exampleFormControlTextarea1"  [(ngModel)] = "myQuote.quote" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Author</label>
+            <input type="name" name = "author" class="form-control" id="exampleFormControlInput1"  [(ngModel)] = "myQuote.author" placeholder="Author name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Date Posted</label>
+            <input type="date"name = "date" class="form-control" id="exampleFormControlInput1"  [(ngModel)] = "myQuote.date" placeholder="Date Posted">
+          </div>
+          <button class="btn btn-success" type="submit"> Send</button>
+    </form>
 </div>
