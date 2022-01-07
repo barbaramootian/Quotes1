@@ -14,7 +14,7 @@ export class QuoteDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  myQuote: Quote[] = [new Quote("Barbra", "Self Love ambassador", "Reson", new Date(2021,12,31))]
+  myQuote: Quote[] = [new Quote("Barbra", "Self Love ambassador", "Reson", new Date(2021,12,31)),new Quote("Austine", "The purpose of Life is to be happy", "Pareyo", new Date(2022,1,8)) ]
   emmitedDetails(details:any){details.date=new Date(details.date)
     this.myQuote.push(details)
   }

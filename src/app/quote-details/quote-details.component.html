@@ -7,9 +7,11 @@
         <div class="col-md-8">
             <div *ngFor="let quote of myQuote; let i =index">
                 <h1 >Name:{{quote.name}}</h1>
-                <app-quotes appHighlight *ngIf="quote.upvotenumber===totalCount  && quote.upvotenumber>0" [quote]="quote"></app-quotes>
+                <h1 appHighlight *ngIf="quote.upvotenumber===totalCount  && quote.upvotenumber>0">Quote:{{quote.quote}}</h1>
+                <!-- <app-quotes appHighlight *ngIf="quote.upvotenumber===totalCount  && quote.upvotenumber>0"[quote]="quote"></app-quotes> -->
                 <h1>Author:{{quote.author}}</h1>
-                <h1>Date:{{quote.date}}</h1>
+                <h1>Date:{{quote.date|date}}</h1>
+                <h1>Posted:{{quote.date|time}}days ago</h1>
                 <button class="btn btn-primary" (click)="upvote(i)">Upvote {{quote.upvotenumber}}</button>
                 <app-downvote></app-downvote>
                 <app-delete (completedquote) = "myCompletedquote($event,i)"></app-delete>

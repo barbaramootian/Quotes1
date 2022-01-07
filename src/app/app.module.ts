@@ -11,6 +11,7 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { DownvoteComponent } from './downvote/downvote.component';
 import { DeleteComponent } from './delete/delete.component';
 import { HighlightDirective } from './highlight.directive';
+import { TimePipe } from './time.pipe';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { HighlightDirective } from './highlight.directive';
     DownvoteComponent,
     DeleteComponent,
     HighlightDirective,
+    TimePipe,
   
   
   ],
