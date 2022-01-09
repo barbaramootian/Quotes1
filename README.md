@@ -1,7 +1,36 @@
 # Quotes1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+## Author 
+Barbara Reson Mootian
+## Description
+The projocet is an application were a user can add.delete,like and dislike a quote and also see which tme the quote have been posted.
+## Installation
+Open terminal
+git clone https://barbaramootian.github.io/Quotes1/  to get repo code
+cd Quotes1
+code
+## Technology Used
+Html5
+Css3
+Bootstrap5
+TypeScript
+JavaScript
 
+## Live Link
+https://barbaramootian.github.io/Quotes1/
+
+## BBD
+User can see some quot posted.
+User can add his/her own quotes.
+User can  lik,dislike or delete quotes.
+
+## Licence
+MIT Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
